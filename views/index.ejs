@@ -1,6 +1,7 @@
 <html>
     <title><%= title %></title>
     <body>
+        <form action="/new"><button>New Message</button></form>
         <% messages.forEach((item) => { %>
             <p><%= item.user %>: <%= item.text %></p>
             <p>- <%= item.added %></p>
