@@ -1,0 +1,9 @@
+<html>
+    <title><%= title %></title>
+    <body>
+        <% messages.forEach((item) => { %>
+            <p><%= item.user %>: <%= item.text %></p>
+            <p>- <%= item.added %></p>
+        <% }); %>
+    </body>
+</html>
