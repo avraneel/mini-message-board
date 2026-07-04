@@ -9,6 +9,11 @@ async function addMessagePost(req, res) {
   await db.addMessage(message);
 }
 
+async function getMessagesGet(req, res) {
+  const messages = db.getMessages(message);
+}
+
 module.exports = {
   addMessagePost,
+  getMessagesGet,
 };

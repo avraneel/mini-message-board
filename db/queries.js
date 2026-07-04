@@ -7,6 +7,12 @@ async function addMessage(message) {
     message.added,
   ]);
 }
+
+async function getMessages() {
+  const rows = pool.query(`SELECT * FROM messages`);
+}
+
 module.exports = {
   addMessage,
+  getMessages,
 };
