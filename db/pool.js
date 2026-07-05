@@ -1,10 +1,10 @@
 const { Pool } = require("pg");
 
-process.loadEnvFile(".env");
+//process.loadEnvFile(".env");
 
 module.exports = new Pool({
   host: process.env.HOST,
   user: process.env.USER,
   port: process.env.PORT,
-  database: "mini_message_board",
+  database: process.env.DB,
 });
